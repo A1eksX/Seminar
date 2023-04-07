@@ -83,33 +83,4 @@ print_operation_table(lambda x, y: x * y, 3, 3)
 #
 # print_operation_table(lambda x, y: x * y)
 
-# ----------------------------------------------------------------------------------
-# def show_table(table: list[list[int]]) -> None:
-#     '''Просто красиво печает матрицу)'''
-#     print('\n'.join('\t'.join(map(str, row)) for row in table))
-#
-#
-# def print_operation_table(oper: callable,
-#                           num_columns: int = 4,
-#                           num_rows: int = 4) -> None:
-#     '''Выводит таблицу для чисел с заданной оперцией oper,
-#     числом столбцов num_columns и строк num_rows'''
-#     table = [list(range(i, i+num_columns)) for i in range(1, num_rows+1)]
-#     # show_table(table)
-#     for i in range(1, len(table)):
-#         for j in range(1, len(table[i])):
-#             table[i][j] = oper(table[i][0], table[0][j])
-#     show_table(table)
 
-# ---------------------------------------------------------------------
-# def print_operation_table(operation, num_rows=6, num_columns=6):
-#     for i in range(1, num_rows + 1):
-#         for j in range(1, num_columns + 1):
-#             if i != 1 and j != 1:
-#                 print(operation(j, i), end="\t")
-#             elif i == 1:
-#                 print(j, end="\t")
-#             else:
-#                 print(i, end="\t")
-#             print()
-# print_operation_table(lambda x, y: x + y)
